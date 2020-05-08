@@ -1,13 +1,16 @@
 package com.globalhitss.miingresohitss.model;
-// Generated 7/05/2020 01:09:22 AM by Hibernate Tools 4.3.1
+// Generated 7/05/2020 10:14:05 PM by Hibernate Tools 4.3.1
 
 import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -40,7 +43,8 @@ public class DetalleVenta implements java.io.Serializable {
 	}
 
 	@Id
-
+        @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ID_DETALLE_VENTA")
+        @SequenceGenerator(name = "ID_DETALLE_VENTA", sequenceName = "ID_DETALLE_VENTA", allocationSize = 1, initialValue = 1)
 	@Column(name = "ID_DETALLE_VENTA", unique = true, nullable = false, precision = 22, scale = 0)
 	public BigDecimal getIdDetalleVenta() {
 		return this.idDetalleVenta;
