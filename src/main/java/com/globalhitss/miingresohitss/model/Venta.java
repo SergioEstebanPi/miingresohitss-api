@@ -133,4 +133,8 @@ public class Venta implements java.io.Serializable {
 		this.detalleVentas = detalleVentas;
 	}
 
+    public void setCliente() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

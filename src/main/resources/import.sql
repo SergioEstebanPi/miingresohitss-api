@@ -13,11 +13,50 @@ INSERT INTO bodega (id_bodega,direccion_bodega,nombre_bodega) VALUES (id_bodega.
 
 /* tabla producto */
 
-INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Audifonos inalámbrico','ACT','Beats','/path',12,'Beats Solo 3 Wireless',150000,'unidad');
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'TV Samsung 55" RU7100 4K + SONIDO','ACT','Samsung','tvsamsung.jpg',48,'TV Samsung 55" RU7100 4K',3060900,'unidad');
 
-INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Best movil MAC','ACT','MAC','/path',24,'Apple iPad',170000,'unidad');
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Conoce el celular Xiaomi Redmi Note 8 Pro 128GB; si eres cliente Claro, cambia tu Smartphone financiado a 6,12,18 o 24 meses en tu factura.','ACT','Xiami','xiaomi.jpg',48,'Xiami Redmi Note 8 Pro 128GB 4G',1506000,'unidad');
 
-INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Alcatel 1s','ACT','Alcatel modelo 2019','/path',48,'Alcatel',330000,'unidad');
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Conoce el celular iPhone 11 64GB 4G; si eres cliente Claro, cambia tu Smartphone financiado a 6,12,18 o 24 meses en tu factura. Adquiérelo en Kit','ACT','Apple','iphone.jpg',48,'iPhone 11 64GB 4G',3522900,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Sistema operativo: Android9.0+EMUI9.1.0 Cámara: 48 Mpx (F/1.8) + 8 Mpx (F/2.4) + 2 Mpx (F/2.4) Batería en modo Stand By: 293 horas','ACT','Huawei','huawei.jpg',48,'Huawei P30 Lite 256GB 4G',1149000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Audifonos inalámbrico','ACT','Beats','beat.jpg',12,'Beats Solo 3 Wireless',150000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Best movil MAC','ACT','Apple','ipad.jpg',24,'Apple iPad',170000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Alcatel 1s','ACT','Alcatel modelo 2019','alcatel.jpg',48,'Alcatel',330000,'unidad');
+
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'TV Samsung 55" RU7100 4K + SONIDO','ACT','Samsung','tvsamsung.jpg',48,'TV Samsung 55" RU7100 4K',3060900,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Conoce el celular Xiaomi Redmi Note 8 Pro 128GB; si eres cliente Claro, cambia tu Smartphone financiado a 6,12,18 o 24 meses en tu factura.','ACT','Xiami','xiaomi.jpg',48,'Xiami Redmi Note 8 Pro 128GB 4G',1506000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Conoce el celular iPhone 11 64GB 4G; si eres cliente Claro, cambia tu Smartphone financiado a 6,12,18 o 24 meses en tu factura. Adquiérelo en Kit','ACT','Apple','iphone.jpg',48,'iPhone 11 64GB 4G',3522900,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Sistema operativo: Android9.0+EMUI9.1.0 Cámara: 48 Mpx (F/1.8) + 8 Mpx (F/2.4) + 2 Mpx (F/2.4) Batería en modo Stand By: 293 horas','ACT','Huawei','huawei.jpg',48,'Huawei P30 Lite 256GB 4G',1149000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Audifonos inalámbrico','ACT','Beats','beat.jpg',12,'Beats Solo 3 Wireless',150000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Best movil MAC','ACT','Apple','ipad.jpg',24,'Apple iPad',170000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Alcatel 1s','ACT','Alcatel modelo 2019','alcatel.jpg',48,'Alcatel',330000,'unidad');
+
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'TV Samsung 55" RU7100 4K + SONIDO','ACT','Samsung','tvsamsung.jpg',48,'TV Samsung 55" RU7100 4K',3060900,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Conoce el celular Xiaomi Redmi Note 8 Pro 128GB; si eres cliente Claro, cambia tu Smartphone financiado a 6,12,18 o 24 meses en tu factura.','ACT','Xiami','xiaomi.jpg',48,'Xiami Redmi Note 8 Pro 128GB 4G',1506000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Conoce el celular iPhone 11 64GB 4G; si eres cliente Claro, cambia tu Smartphone financiado a 6,12,18 o 24 meses en tu factura. Adquiérelo en Kit','ACT','Apple','iphone.jpg',48,'iPhone 11 64GB 4G',3522900,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Sistema operativo: Android9.0+EMUI9.1.0 Cámara: 48 Mpx (F/1.8) + 8 Mpx (F/2.4) + 2 Mpx (F/2.4) Batería en modo Stand By: 293 horas','ACT','Huawei','huawei.jpg',48,'Huawei P30 Lite 256GB 4G',1149000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Audifonos inalámbrico','ACT','Beats','beat.jpg',12,'Beats Solo 3 Wireless',150000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Best movil MAC','ACT','Apple','ipad.jpg',24,'Apple iPad',170000,'unidad');
+
+INSERT INTO producto (id_producto,descripcion_producto,estado_producto,fabricante,foto_producto,meses_garantia,nombre_producto,precio_minimo,unidad_medida) VALUES (id_producto.nextval,'Alcatel 1s','ACT','Alcatel modelo 2019','alcatel.jpg',48,'Alcatel',330000,'unidad');
+
 
 
 /* tabla descuento */

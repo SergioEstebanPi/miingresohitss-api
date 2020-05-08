@@ -42,7 +42,8 @@ public class VentaController {
     @GetMapping("/{id}")
     @ResponseBody
     public VentaDTO getAllVenta(@PathVariable BigDecimal id) {
-        return convertToDto(ventaService.getVenta(id));
+        //return convertToDto(ventaService.getVenta(id));
+        return new VentaDTO();
     }
 
     @PostMapping
