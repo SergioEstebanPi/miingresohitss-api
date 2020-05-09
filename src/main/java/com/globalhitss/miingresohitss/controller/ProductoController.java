@@ -34,16 +34,22 @@ public class ProductoController {
     public List<ProductoDTO> getAllProducto() {
         List<ProductoDTO> listaProducto = new ArrayList<>();
         productoService.getAllProducto().forEach((producto) -> {
-            listaProducto.add(convertToDto(producto));
+            if(!"INA".equals(producto.getEstadoProducto())){
+                listaProducto.add(convertToDto(producto));   
+            }
         });
         return listaProducto;
     }
 
     @GetMapping("/{id}")
     @ResponseBody
-    public ProductoDTO getAllProducto(@PathVariable BigDecimal id) {
-        //return productoService.getProducto(id);
-        return new ProductoDTO();
+    public ProductoDTO getAllProducto(@PathVariable BigDecimal id) throws Exception {
+        Producto producto = productoService.getProducto(id);
+        if(!"INA".equals(producto.getEstadoProducto())){
+            return convertToDto(producto);   
+        } else {
+            throw new Exception("No existe el producto");
+        }
     }
 
     @PostMapping
@@ -61,7 +67,9 @@ public class ProductoController {
     @DeleteMapping("/{id}")
     @ResponseBody
     public void deleteProducto(@PathVariable BigDecimal id) {
-        productoService.deleteProducto(id);
+        Producto producto = productoService.getProducto(id);
+        producto.setEstadoProducto("INA");
+        productoService.saveProducto(producto);
     }
     
     private ProductoDTO convertToDto(Producto producto) {

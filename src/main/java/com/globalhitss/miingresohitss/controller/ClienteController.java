@@ -42,8 +42,7 @@ public class ClienteController {
     @GetMapping("/{id}")
     @ResponseBody
     public ClienteDTO getAllCliente(@PathVariable BigDecimal id) {
-        //return clienteService.getCliente(id);
-        return new ClienteDTO();
+        return convertToDto(clienteService.getCliente(id));
     }
 
     @PostMapping
