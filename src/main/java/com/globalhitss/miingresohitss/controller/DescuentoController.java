@@ -75,14 +75,14 @@ public class DescuentoController {
         return descuentoDTO;
     }
 
-    private Descuento convertToEntity(DescuentoDTO descuentoDTO) {
-        Descuento descuento = new Descuento();
-        descuento.setFechaFinal(descuentoDTO.getFechaFinal());
-        descuento.setFechaInicial(descuentoDTO.getFechaInicial());
-        descuento.setIdDescuento(descuentoDTO.getIdDescuento());
-        descuento.setPorcentaje(descuentoDTO.getPorcentaje());
-        //descuento.setProducto(descuentoDTO.getProducto());
-        return descuento;
-    }
+//    private Descuento convertToEntity(DescuentoDTO descuentoDTO) {
+//        Descuento descuento = new Descuento();
+//        descuento.setFechaFinal(descuentoDTO.getFechaFinal());
+//        descuento.setFechaInicial(descuentoDTO.getFechaInicial());
+//        descuento.setIdDescuento(descuentoDTO.getIdDescuento());
+//        descuento.setPorcentaje(descuentoDTO.getPorcentaje());
+//        //descuento.setProducto(descuentoDTO.getProducto());
+//        return descuento;
+//    }
 
 }

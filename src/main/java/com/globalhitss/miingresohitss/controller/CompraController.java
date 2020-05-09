@@ -1,5 +1,15 @@
 package com.globalhitss.miingresohitss.controller;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.globalhitss.miingresohitss.dto.CompraDTO;
 import com.globalhitss.miingresohitss.model.Cliente;
 import com.globalhitss.miingresohitss.model.DetalleVenta;
@@ -11,16 +21,6 @@ import com.globalhitss.miingresohitss.service.IDetalleVentaService;
 import com.globalhitss.miingresohitss.service.IMedioPagoService;
 import com.globalhitss.miingresohitss.service.IProductoService;
 import com.globalhitss.miingresohitss.service.IVentaService;
-import com.globalhitss.miingresohitss.serviceImpl.VentaServiceImpl;
-import java.math.BigDecimal;
-import java.util.Date;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/compra")

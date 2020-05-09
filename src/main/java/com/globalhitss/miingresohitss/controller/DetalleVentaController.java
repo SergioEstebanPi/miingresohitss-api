@@ -75,13 +75,13 @@ public class DetalleVentaController {
         return detalleVentaDTO;
     }
 
-    private DetalleVenta convertToEntity(DetalleVentaDTO detalleVentaDTO) {
-        DetalleVenta detalleVenta = new DetalleVenta();
-        detalleVenta.setCantidadVenta(detalleVentaDTO.getCantidadVenta());
-        detalleVenta.setIdDetalleVenta(detalleVenta.getIdDetalleVenta());
-        //detalleVenta.setProducto(detalleVentaDTO.getProducto());
-        detalleVenta.setValorUnitario(detalleVentaDTO.getValorUnitario());
-        //detalleVenta.setVenta(detalleVentaDTO.getVenta());
-        return detalleVenta;
-    }
+//    private DetalleVenta convertToEntity(DetalleVentaDTO detalleVentaDTO) {
+//        DetalleVenta detalleVenta = new DetalleVenta();
+//        detalleVenta.setCantidadVenta(detalleVentaDTO.getCantidadVenta());
+//        detalleVenta.setIdDetalleVenta(detalleVenta.getIdDetalleVenta());
+//        //detalleVenta.setProducto(detalleVentaDTO.getProducto());
+//        detalleVenta.setValorUnitario(detalleVentaDTO.getValorUnitario());
+//        //detalleVenta.setVenta(detalleVentaDTO.getVenta());
+//        return detalleVenta;
+//    }
 }

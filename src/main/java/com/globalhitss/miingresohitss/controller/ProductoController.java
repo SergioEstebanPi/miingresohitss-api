@@ -55,7 +55,6 @@ public class ProductoController {
     @PutMapping
     @ResponseBody
     public ProductoDTO putProducto(@RequestBody Producto producto) {
-        Producto productoActual = productoService.getProducto(producto.getIdProducto());
         return convertToDto(productoService.saveProducto(producto));
     }
 
@@ -82,20 +81,20 @@ public class ProductoController {
         return productoDTO;
     }
 
-    private Producto convertToEntity(ProductoDTO productoDTO) {
-        Producto producto = new Producto();
-        producto.setDescripcionProducto(productoDTO.getDescripcionProducto());
-        //producto.setDescuentos(productoDTO.getDescuentos());
-        //producto.setDetalleVentas(productoDTO.getDetalleVentas());
-        producto.setEstadoProducto(productoDTO.getEstadoProducto());
-        producto.setFabricante(productoDTO.getFabricante());
-        producto.setFotoProducto(productoDTO.getFotoProducto());
-        producto.setIdProducto(productoDTO.getIdProducto());
-        //producto.setInventarios(productoDTO.getInventarios());
-        producto.setMesesGarantia(productoDTO.getMesesGarantia());
-        producto.setNombreProducto(productoDTO.getNombreProducto());
-        producto.setPrecioMinimo(productoDTO.getPrecioMinimo());
-        producto.setUnidadMedida(productoDTO.getUnidadMedida());
-        return producto;
-    }
+//    private Producto convertToEntity(ProductoDTO productoDTO) {
+//        Producto producto = new Producto();
+//        producto.setDescripcionProducto(productoDTO.getDescripcionProducto());
+//        //producto.setDescuentos(productoDTO.getDescuentos());
+//        //producto.setDetalleVentas(productoDTO.getDetalleVentas());
+//        producto.setEstadoProducto(productoDTO.getEstadoProducto());
+//        producto.setFabricante(productoDTO.getFabricante());
+//        producto.setFotoProducto(productoDTO.getFotoProducto());
+//        producto.setIdProducto(productoDTO.getIdProducto());
+//        //producto.setInventarios(productoDTO.getInventarios());
+//        producto.setMesesGarantia(productoDTO.getMesesGarantia());
+//        producto.setNombreProducto(productoDTO.getNombreProducto());
+//        producto.setPrecioMinimo(productoDTO.getPrecioMinimo());
+//        producto.setUnidadMedida(productoDTO.getUnidadMedida());
+//        return producto;
+//    }
 }

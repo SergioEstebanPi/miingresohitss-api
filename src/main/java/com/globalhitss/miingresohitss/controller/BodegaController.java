@@ -82,12 +82,12 @@ public class BodegaController {
             return bodegaDTO;
         }
 
-        private Bodega convertToEntity(BodegaDTO bodegaDTO) {
-            Bodega bodega = new Bodega();
-            bodega.setIdBodega(bodegaDTO.getIdBodega());
-            bodega.setDireccionBodega(bodegaDTO.getDireccionBodega());
-            //bodegaDTO.setInventarios(bodega.getInventarios());
-            bodega.setNombreBodega(bodegaDTO.getNombreBodega());
-            return bodega;
-        }
+//        private Bodega convertToEntity(BodegaDTO bodegaDTO) {
+//            Bodega bodega = new Bodega();
+//            bodega.setIdBodega(bodegaDTO.getIdBodega());
+//            bodega.setDireccionBodega(bodegaDTO.getDireccionBodega());
+//            //bodegaDTO.setInventarios(bodega.getInventarios());
+//            bodega.setNombreBodega(bodegaDTO.getNombreBodega());
+//            return bodega;
+//        }
 }

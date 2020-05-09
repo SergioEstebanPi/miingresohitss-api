@@ -1,8 +1,7 @@
 package com.globalhitss.miingresohitss.controller;
 
-import com.globalhitss.miingresohitss.dto.BodegaDTO;
-import com.globalhitss.miingresohitss.dto.ClienteDTO;
-import com.globalhitss.miingresohitss.model.Bodega;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.globalhitss.miingresohitss.dto.ClienteDTO;
 import com.globalhitss.miingresohitss.model.Cliente;
-import java.math.BigDecimal;
 import com.globalhitss.miingresohitss.service.IClienteService;
-import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/cliente")
@@ -57,7 +55,6 @@ public class ClienteController {
     @PutMapping
     @ResponseBody
     public ClienteDTO putCliente(@RequestBody Cliente cliente) {
-        Cliente clienteActual = clienteService.getCliente(cliente.getIdCliente());
         return convertToDto(clienteService.saveCliente(cliente));
     }
 
@@ -86,22 +83,22 @@ public class ClienteController {
         return clienteDTO;
     }
 
-    private Cliente convertToEntity(ClienteDTO clienteDTO) {
-        Cliente cliente = new Cliente();
-        cliente.setApellidosCliente(clienteDTO.getApellidosCliente());
-        cliente.setContrasena(clienteDTO.getContrasena());
-        cliente.setCorreo(clienteDTO.getCorreo());
-        cliente.setDireccionCliente(clienteDTO.getDireccionCliente());
-        cliente.setDocumento(clienteDTO.getDocumento());
-        cliente.setFechaNacimiento(clienteDTO.getFechaNacimiento());
-        cliente.setFotoCliente(clienteDTO.getFotoCliente());
-        cliente.setGenero(clienteDTO.getGenero());
-        cliente.setIdCliente(clienteDTO.getIdCliente());
-        //cliente.setMedioPagos(clienteDTO.getMedioPagos());
-        clienteDTO.setNombresCliente(clienteDTO.getNombresCliente());
-        clienteDTO.setTelefono(clienteDTO.getTelefono());
-        clienteDTO.setTipoDocumento(clienteDTO.getTipoDocumento());
-        //cliente.setVentas(clienteDTO.getVentas());
-        return cliente;
-    }
+//    private Cliente convertToEntity(ClienteDTO clienteDTO) {
+//        Cliente cliente = new Cliente();
+//        cliente.setApellidosCliente(clienteDTO.getApellidosCliente());
+//        cliente.setContrasena(clienteDTO.getContrasena());
+//        cliente.setCorreo(clienteDTO.getCorreo());
+//        cliente.setDireccionCliente(clienteDTO.getDireccionCliente());
+//        cliente.setDocumento(clienteDTO.getDocumento());
+//        cliente.setFechaNacimiento(clienteDTO.getFechaNacimiento());
+//        cliente.setFotoCliente(clienteDTO.getFotoCliente());
+//        cliente.setGenero(clienteDTO.getGenero());
+//        cliente.setIdCliente(clienteDTO.getIdCliente());
+//        //cliente.setMedioPagos(clienteDTO.getMedioPagos());
+//        clienteDTO.setNombresCliente(clienteDTO.getNombresCliente());
+//        clienteDTO.setTelefono(clienteDTO.getTelefono());
+//        clienteDTO.setTipoDocumento(clienteDTO.getTipoDocumento());
+//        //cliente.setVentas(clienteDTO.getVentas());
+//        return cliente;
+//    }
 }

@@ -78,16 +78,16 @@ public class MedioPagoController {
         return medioPagoDTO;
     }
 
-    private MedioPago convertToEntity(MedioPagoDTO medioPagoDTO) {
-        MedioPago medioPago = new MedioPago();
-        //medioPago.setCliente(medioPagoDTO.getCliente());
-        medioPago.setCodigoPostal(medioPagoDTO.getCodigoPostal());
-        medioPago.setCodigoVerificacion(medioPagoDTO.getCodigoVerificacion());
-        medioPago.setIdMedioPago(medioPagoDTO.getIdMedioPago());
-        medioPago.setNombreTarjeta(medioPagoDTO.getNombreTarjeta());
-        medioPago.setNumeroTarjeta(medioPagoDTO.getNumeroTarjeta());
-        medioPago.setValidaHasta(medioPagoDTO.getValidaHasta());
-        //medioPago.setVentas(medioPagoDTO.getVentas());
-        return medioPago;
-    }
+//    private MedioPago convertToEntity(MedioPagoDTO medioPagoDTO) {
+//        MedioPago medioPago = new MedioPago();
+//        //medioPago.setCliente(medioPagoDTO.getCliente());
+//        medioPago.setCodigoPostal(medioPagoDTO.getCodigoPostal());
+//        medioPago.setCodigoVerificacion(medioPagoDTO.getCodigoVerificacion());
+//        medioPago.setIdMedioPago(medioPagoDTO.getIdMedioPago());
+//        medioPago.setNombreTarjeta(medioPagoDTO.getNombreTarjeta());
+//        medioPago.setNumeroTarjeta(medioPagoDTO.getNumeroTarjeta());
+//        medioPago.setValidaHasta(medioPagoDTO.getValidaHasta());
+//        //medioPago.setVentas(medioPagoDTO.getVentas());
+//        return medioPago;
+//    }
 }

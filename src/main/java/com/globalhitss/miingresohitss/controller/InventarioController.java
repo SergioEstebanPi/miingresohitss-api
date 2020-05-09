@@ -74,12 +74,12 @@ public class InventarioController {
         return inventarioDTO;
     }
 
-    private Inventario convertToEntity(InventarioDTO inventarioDTO) {
-        Inventario inventario = new Inventario();
-        //inventario.setBodega(inventarioDTO.getBodega());
-        inventario.setCantidadDisponible(inventarioDTO.getCantidadDisponible());
-        inventario.setIdInventario(inventarioDTO.getIdInventario());
-        //inventario.setProducto(inventarioDTO.getProducto());
-        return inventario;
-    }
+//    private Inventario convertToEntity(InventarioDTO inventarioDTO) {
+//        Inventario inventario = new Inventario();
+//        //inventario.setBodega(inventarioDTO.getBodega());
+//        inventario.setCantidadDisponible(inventarioDTO.getCantidadDisponible());
+//        inventario.setIdInventario(inventarioDTO.getIdInventario());
+//        //inventario.setProducto(inventarioDTO.getProducto());
+//        return inventario;
+//    }
 }

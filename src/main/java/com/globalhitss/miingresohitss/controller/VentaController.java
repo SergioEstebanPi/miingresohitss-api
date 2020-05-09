@@ -42,8 +42,7 @@ public class VentaController {
     @GetMapping("/{id}")
     @ResponseBody
     public VentaDTO getAllVenta(@PathVariable BigDecimal id) {
-        //return convertToDto(ventaService.getVenta(id));
-        return new VentaDTO();
+        return convertToDto(ventaService.getVenta(id));
     }
 
     @PostMapping
@@ -77,15 +76,15 @@ public class VentaController {
         return ventaDTO;
     }
 
-    private Venta convertToEntity(VentaDTO ventaDTO) {
-        Venta venta = new Venta();
-        //venta.setCliente(ventaDTO.getCliente());
-        //venta.setDetalleVentas(ventaDTO.getDetalleVentas());
-        venta.setEstadoVenta(ventaDTO.getEstadoVenta());
-        venta.setFechaVenta(ventaDTO.getFechaVenta());
-        venta.setIdVenta(ventaDTO.getIdVenta());
-        //venta.setMedioPago(ventaDTO.getMedioPago());
-        venta.setValorTotal(ventaDTO.getValorTotal());
-        return venta;
-    }
+//    private Venta convertToEntity(VentaDTO ventaDTO) {
+//        Venta venta = new Venta();
+//        //venta.setCliente(ventaDTO.getCliente());
+//        //venta.setDetalleVentas(ventaDTO.getDetalleVentas());
+//        venta.setEstadoVenta(ventaDTO.getEstadoVenta());
+//        venta.setFechaVenta(ventaDTO.getFechaVenta());
+//        venta.setIdVenta(ventaDTO.getIdVenta());
+//        //venta.setMedioPago(ventaDTO.getMedioPago());
+//        venta.setValorTotal(ventaDTO.getValorTotal());
+//        return venta;
+//    }
 }
