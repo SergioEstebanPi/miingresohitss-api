@@ -42,28 +42,28 @@ public class CompraController {
 
     @PostMapping
     @ResponseBody
-    public int postBodega(@RequestBody CompraDTO compraDTO) {
+    public boolean postBodega(@RequestBody CompraDTO compraDTO) throws Exception {
         Cliente cliente = clienteService.getCliente(compraDTO.getIdCliente());
         MedioPago medioPago = medioPagoService.getMedioPago(compraDTO.getIdMedioPago());
         Producto producto = productoService.getProducto(compraDTO.getIdProducto());
 
-        if (medioPago.getCliente().getIdCliente() == cliente.getIdCliente()) {
-            Venta venta = new Venta();
-            venta.setCliente(cliente);
-            venta.setMedioPago(medioPago);
-            venta.setFechaVenta(new Date());
-            venta.setEstadoVenta("ACT");
-            venta.setValorTotal(new BigDecimal(0));
-            ventaService.saveVenta(venta);
-
-            DetalleVenta detalleVenta = new DetalleVenta();
-            detalleVenta.setVenta(venta);
-            detalleVenta.setProducto(producto);
-            detalleVenta.setValorUnitario(producto.getPrecioMinimo());
-            detalleVenta.setCantidadVenta(compraDTO.getCantidad());
-            detalleVentaService.saveDetalleVenta(detalleVenta);
-            return 0;
+        if (!cliente.getIdCliente().equals(medioPago.getCliente().getIdCliente())) {
+            throw new Exception("El medio de pago no corresponde a este cliente " + cliente.getIdCliente() + " medio " + medioPago.getCliente().getIdCliente());
         }
-        return -1;
+        Venta venta = new Venta();
+        venta.setCliente(cliente);
+        venta.setMedioPago(medioPago);
+        venta.setFechaVenta(new Date());
+        venta.setEstadoVenta("ACT");
+        venta.setValorTotal(new BigDecimal(0));
+        ventaService.saveVenta(venta);
+
+        DetalleVenta detalleVenta = new DetalleVenta();
+        detalleVenta.setVenta(venta);
+        detalleVenta.setProducto(producto);
+        detalleVenta.setValorUnitario(producto.getPrecioMinimo());
+        detalleVenta.setCantidadVenta(compraDTO.getCantidad());
+        detalleVentaService.saveDetalleVenta(detalleVenta);
+        return true;
     }
 }
